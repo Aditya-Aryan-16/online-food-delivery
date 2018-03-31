@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Spicy.com</title>
+	<link rel="icon" href="pictures/chilli.ico">
+	
+<meta charset = "UTF-8">
+<meta name = "keywords" content = "food">
+<meta name = "author" content = "Aditya Aryan">
+<meta name = "description" content = "Yet to describe">
+<meta name = "viewport" content = "width = device-width , initial-scale = 1.0">
+<meta http-equiv = "Refresh" content = "30000">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="new.css">
+  <style>
+  .s
+  {
+	 width:550px;
+  }
+  </style>
+  
+  
+</head>
+
+<body> 
+
+<div class="container-fluid"  id="tint">
+<nav class="navbar navbar-inverse" id="nav" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+		<a class="navbar-brand" href="#"><img src="pictures/logo.png" id=i1></a>
+      
+      </ul>
+    
+      <div class="nav navbar-nav navbar-right">
+      <li><a href="#loginModal" id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	 <li><a href="#signupModal" id="signup"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
+	  </div>    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div  id="center">
+<div  id="center-set">
+<div class="container" id="popup">
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" style="font-size: 30px;">Sign Up</h4>
+        </div>
+        <div class="modal-body">
+		<div  align="center">
+       </div>	
+
+	<form method="post" action="execute.php" onsubmit="return  validateForm()">
+
+		<div class="input-group">
+			<input type="text" name="fname" class="s" placeholder="Enter first name ">
+		</div>
+		<div class="input-group">
+			<input type="text" name="lname" class="s" placeholder="Enter last name">
+		</div>
+		<div class="input-group">
+			<input type="text" name="username" class="s" placeholder="Enter Username">
+		</div>
+		<div class="input-group">
+			<input type="email" name="email" class="s" placeholder="Enter Email Id">
+		</div>
+		<div class="input-group">
+			<input type="password" name="password" class="s" placeholder="Enter Password">
+		</div>
+		<div class="input-group" >
+			<button type="submit" class="btn" name="reg_user" id="submit">Register</button>
+		</div>
+	</form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+  <p id=p1> Find Best Food Near You!!</p>
+  <form action="restaurant.php" method="post">
+  <div class="form-group row">
+      <div class="col-md-5 col-md-offset-3">
+        <input type="text" class="form-control" placeholder="Enter the city name..." name="search">
+      </div>           
+      <div class="col-md-4">
+        <button name="submit" type="submit" value="search" class="btn btn-default">View Restaurants</button>
+      </div>
+    </div>
+    
+  </form>
+</div>
+</div>
+<br>
+
+
+
+
+
+<h1 align="center" > How It Works</h1></br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="pictures/rsearch.png" id=i4></br></br>
+	  <p id=button>Search</p></br></br>
+	  <p>Find all the restaurants available near you</p>
+    </div>
+     <div class="col-md-3">
+      <img src="pictures/choose.png" id=i4></br></br>
+	  <p id=button>Choose</p></br></br>
+	  <p>Browse hundreds of menus to find the food you like</p>
+    </div> <div class="col-md-3">
+      <img src="pictures/pay.png" id=i4></br></br>
+	  <p id=button>Pay</p></br></br>
+	  <p>There is quick, secure and easy payment service</p>
+    </div> <div class="col-md-3">
+      <img src="pictures/enjoy.png" id=i4></br></br>
+	  <p id=button>Enjoy</p></br></br>
+	  <p>Food is prepared & delivered to your door</p>
+    </div>
+  </div>
+</div>
+<hr class="style1">
+
+
+<h1 align="center"> We are currently available in these cities</h1></br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+         <a> <img src="pictures/delhi.jpg">
+          <div class="caption">
+            <p>Delhi</p></a>
+          </div>
+    </div>
+    <div class="col-md-4">
+          <img src="pictures/delhi.jpg">
+          <div class="caption">
+            <p>Mumbai</p>
+          </div>
+    </div>
+    <div class="col-md-4">
+          <img src="pictures/kolkata.jpg">
+          <div class="caption">
+            <p>Kolkata</p>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+
+<div class="footer">
+<section> 
+<a href="#">
+   <img src="pictures/f.png" 
+    onmouseover="this.src='pictures/f1.png'"
+    onmouseout="this.src='pictures/f.png'" id=f>
+</a>
+<a href="#">
+   <img src="pictures/t.png" 
+    onmouseover="this.src='pictures/t1.png'"
+    onmouseout="this.src='pictures/t.png'" id=t>
+</a>
+<a href="#">
+   <img src="pictures/i.png" 
+    onmouseover="this.src='pictures/i1.png'"
+    onmouseout="this.src='pictures/i.png'" id=i>
+</a>
+
+</section>
+<ul>
+<a href="#" style="color:#008080;"><li>Terms & Coditions</a></li>
+<a href="#" style="color:#008080;"><li>Privacy Policy</a></li>
+<a href="#" style="color:#008080;"><li>Refund/Cancellation Policy</a></li>
+<a href="#" style="color:#008080;"><li>About US</a></li>
+</ul>
+</div>
+
+
+</html>-
